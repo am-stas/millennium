@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link href="css/grid24.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="libs/css/blueimp-gallery.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<section class="header row container-fluid">
+    <div class="logo col-md-8">
+        <a href="/">
+            <img src="img/logo.png" alt="logo" width="256px">
+            <span class="caption">бизнес центр современного уровня</span>
+        </a>
+    </div>
+    <div class="menu col-md-16">
+        <div class="col-md-6 li">
+            <a href="#request">Оформить&nbsp;запрос</a>
+        </div>
+        <div class="col-md-4 li">
+            <a href="#about">О нас</a>
+        </div>
+        <div class="col-md-4 li">
+            <a href="#services">Услуги</a>
+        </div>
+        <div class="col-md-5 li">
+            <a href="#clients">Говорят&nbsp;клиенты</a>
+        </div>
+        <div class="col-md-5 li">
+            <a href="#contacts">Контакты</a>
+        </div>
+    </div>
+</section>
+
+<section class="request container-fluid">
+    <div id="change-lang">
+        <a href="#">
+            <div class="ru">RU</div>
+        </a>
+        <a href="#">
+            <div class="eng">ENG</div>
+        </a>
+    </div>
+    <div class="title">
+        <span class="top">Полностью оборудованные современные офисы</span>
+        <span class="bottom">в аренду сроком от 1 дня до 1 года площадью от 10 до 100 метров</span>
+    </div>
+    <div class="request-form" id="request">
+        <i class="close"></i>
+        <span class="form-title"><strong>Оформить запрос</strong></span>
+        <form action="" class="request" method="post">
+            <span class="desc">Отправьте Ваш запрос,<br/> и мы свяжемся с Вами.</span>
+
+            <input type="text" name="name" id="req-form-name" placeholder="Ваше имя*" class required>
+            <input type="text" name="email" id="req-form-email" placeholder="Электронный адрес*" required>
+            <input type="text" name="phone" id="req-form-phone" placeholder="Номер телефона*" required>
+
+            <span>Площадь*</span>
+
+            <input type="text" name="area-before" id="req-form-area-before" class="js-int int" placeholder="От"
+                   required>
+            <input type="text" name="area-after" id="req-form-area-after" class="js-int int" placeholder="До" required>
+
+            <span>Кол-во сотрудников*</span>
+
+            <input type="text" name="emp-before" id="req-form-emp-before" class="js-int int" placeholder="От" required>
+            <input type="text" name="emp-after" id="req-form-emp-after" class="js-int int" placeholder="До" required>
+
+            <input type="submit" onclick="validate(this.form)" name="submit" id="req-form-submit" value="Оформить">
+
+            <span class="post-desc">*Поля обязательные для заполнения</span>
+        </form>
+        <div id="triangle-topleft" class="col-md-offset-2"></div>
+    </div>
+
+</section>
+
+<section class="about row container-fluid" id="about">
+    <div class="about-title">О компании</div>
+    <div class="text">
+        <p>Бизнес-центр Миллениум Хаус открыт в&nbsp;1999&nbsp;году. Это бизнес-центр с&nbsp;западным стилем
+            обслуживания и&nbsp;управления, часть западного инвестиционного
+            Фонда Кaльчуга, клиентами которого являлись и&nbsp;являются такие всемирно известные организации, как Дойче
+            Банк, Тойота Мотор, Фольксваген Груп Рус,
+            Хитачи Лтд., Японское Аэроскосмическое Агентство, Джей Си&nbsp;Би, Хитачи Дата Системз, Радиус Груп, Сейбра
+            и&nbsp;другие, требованиям которых соответствуют
+            только здания класса&nbsp;А в&nbsp;Москве.<br/><br/>
+            Расположенный на&nbsp;расстоянии одного километра от&nbsp;Кремля, неподалеку от&nbsp;лучших в&nbsp;Москве
+            международных отелей
+            (Марриот, Шератон, Ренессанс, Савой, Метрополь, Националь) и&nbsp;главного торгово-развлекательного центра
+            столицы&nbsp;&mdash; Тверской улицы, в&nbsp;трех минутах
+            ходьбы от&nbsp;станций метро &laquo;Цветной бульвар&raquo;, &laquo;Трубная, &laquo;Сухаревская&raquo; и&nbsp;&laquo;Чистые
+            пруды&raquo; и&nbsp;в&nbsp;непосредственной близости от&nbsp;Садового и&nbsp;Бульварного кольца,
+            Бизнес-центр Миллениум Хаус&nbsp;&mdash; это идеальное место для начала развития Вашего бизнеса в&nbsp;Москве
+            и&nbsp;России.</p>
+    </div>
+    <div class="philosophy-bg">
+        <div class="philosophy-title">
+            <i class="icon"></i>
+            Философия компании
+            <div class="philosophy-desc">&laquo;Мы&nbsp;делаем все возможное для каждого нашего клиента!&raquo;</div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="title">Услуги</div>
+    <div class="desc"><i class="check"></i>Мы&nbsp;рады предложить Вам полностью оборудованные офисы</div>
+    <div class="text">Если Вы&nbsp;планируете открыть свое дело в&nbsp;Москве, наши полностью оборудованные и&nbsp;меблированные
+        офисы&nbsp;&mdash; это&nbsp;то, что Вам нужно!
+        Миллениум Хаус располагает широким выбором офисов вместимостью от&nbsp;1&nbsp;до&nbsp;10&nbsp;человек,
+        предоставляемых в&nbsp;аренду как на&nbsp;короткий срок,
+        так и&nbsp;на&nbsp;более длительное время, полностью оборудованных новейшими телекоммуникационными системами и&nbsp;офисной
+        мебелью. К&nbsp;услугам
+        арендаторов высокоскоростной интернет, выделенные телефонные линии, телефонные аппараты с&nbsp;функцией
+        аудиоконференции, разработанные
+        специально для работы с&nbsp;компьютером рабочие столы и&nbsp;удобные эргономичные кресла.
+    </div>
+    <div class="photo-block" id="service-photos">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="photo">
+                    <div class="overlay">
+                        <div class="top"></div>
+                    </div>
+                    <a href="img/photos/photo-1.png">
+                        <img src="img/photos/photo-1.png" alt="photo 1">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="photo">
+                    <div class="overlay">
+                        <div class="top"></div>
+                    </div>
+                    <a href="img/photos/photo-2.png">
+                        <img src="img/photos/photo-2.png" alt="photo 2">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="photo">
+                    <div class="overlay">
+                        <div class="top"></div>
+                    </div>
+                    <a href="img/photos/photo-3.png">
+                        <img src="img/photos/photo-3.png" alt="photo 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="photo">
+                    <div class="overlay">
+                        <div class="top"></div>
+                    </div>
+                    <a href="img/photos/photo-4.png">
+                        <img src="img/photos/photo-4.png" alt="photo 4">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="photo">
+                    <div class="overlay">
+                        <div class="top"></div>
+                    </div>
+                    <a href="img/photos/photo-5.png">
+                        <img src="img/photos/photo-5.png" alt="photo 5">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="photo">
+                    <div class="overlay">
+                        <div class="top"></div>
+                    </div>
+                    <a href="img/photos/photo-6.png">
+                        <img src="img/photos/photo-6.png" alt="photo 6">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="additional-services container-fluid">
+    <div class="title">Дополнительные услуги</div>
+    <div class="desc">Мы&nbsp;рады предложить нашим арендаторам дополнительные услуги, необходимые для эффективного
+        ведения бизнеса:
+    </div>
+    <div class="add-services">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="cell one">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign"><span>Рассылка факсов и&nbsp;электронных сообщений</span></div>
+                    <img src="img/services/1.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="cell two">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign">Ксерокопирование</div>
+                    <img src="img/services/2.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="cell three">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign">Профессиональные ответы наших англоговорящих секретарей на&nbsp;входящие звонки
+                        для Вашей компании
+                    </div>
+                    <img src="img/services/3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cell four min">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign">Компьютерная поддержка</div>
+                    <img src="img/services/4.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cell five min">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign">Услуги секретаря</div>
+                    <img src="img/services/5.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cell six min">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign">Обслуживание переговоров <span class="small">(кофе-паузы, плазменная панель с&nbsp;большим экраном,
+                        ауди-и видеоконференция, ЛСД-проектор).</span>
+                    </div>
+                    <img src="img/services/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cell seven min">
+                    <div class="overlay"></div>
+                    <div class="icon"></div>
+                    <div class="sign">Услуги курьерских служб</div>
+                    <img src="img/services/7.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="virtual-office">
+    <div class="title">Виртуальный офис</div>
+    <div class="text">
+        Если Ваша деятельность в&nbsp;Москве не&nbsp;требует Вашего постоянного присутствия в&nbsp;офисе,
+        услуга &laquo;Виртуальный офис&raquo;&nbsp;&mdash; это&nbsp;то, что Вам нужно.
+    </div>
+    <!--<div class="image"></div>-->
+    <div class="image">
+        <svg id="стрелки" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1321.7 686.8">
+            <defs>
+                <style>.cls-1 {
+                    fill: none;
+                    stroke: #9bbcee;
+                    stroke-miterlimit: 10;
+                    stroke-width: 5px;
+                }
+
+                .cls-2 {
+                    fill: #9bbcee;
+                }</style>
+            </defs>
+            <title>виртуальный офис1</title>
+            <line class="cls-1" x1="494.78" y1="384.68" x2="294.07" y2="535.08"/>
+            <polyline class="cls-1" points="306.25 512.06 295.07 534.42 319.8 530.76"/>
+            <line class="cls-1" x1="639.55" y1="413.96" x2="608.16" y2="549.93"/>
+            <polyline class="cls-1" points="602.68 523.03 609.33 547.13 625.26 527.86"/>
+            <line class="cls-1" x1="840.45" y1="377.96" x2="1036.37" y2="576.76"/>
+            <polyline class="cls-1" points="1009.66 566.83 1033.37 574.76 1026.28 550.79"/>
+            <line class="cls-1" x1="796.47" y1="294.63" x2="1067.59" y2="105.27"/>
+            <polyline class="cls-1" points="1055.55 128.38 1064.59 105.07 1040.31 111.03"/>
+            <line class="cls-1" x1="656.94" y1="229.36" x2="612.97" y2="115.26"/>
+            <polyline class="cls-1" points="632.21 135.64 614.78 117.73 610.1 142.28"/>
+            <line class="cls-1" x1="260.02" y1="156.08" x2="572.89" y2="274"/>
+            <polyline class="cls-1" points="287.19 155.08 262.21 154.15 275.77 175.15"/>
+            <rect class="cls-1" x="198.07" y="448.3" width="96" height="178.24" rx="17.25" ry="17.25"/>
+            <rect class="cls-1" x="206.07" y="464.67" width="79.5" height="140.82"/>
+            <rect class="cls-2" x="232.77" y="454.86" width="25.34" height="4.59" rx="1.75" ry="1.75"/>
+            <rect class="cls-2" x="262.27" y="454.86" width="4.82" height="4.59" rx="1.75" ry="1.75"/>
+            <rect class="cls-2" x="270.46" y="454.86" width="4.82" height="4.59" rx="1.75" ry="1.75"/>
+            <rect class="cls-1" x="530.42" y="549.93" width="191.99" height="128.82" rx="12.44" ry="12.44"/>
+            <rect class="cls-1" x="542.98" y="563.77" width="167.34" height="101.62"/>
+            <rect class="cls-1" x="1036.37" y="469.23" width="91.42" height="215.06" rx="17.63" ry="17.63"/>
+            <circle class="cls-1" cx="1080.92" cy="628.73" r="7.36"/>
+            <path class="cls-1"
+                  d="M1419,664.44h-57.33a5.44,5.44,0,0,1-5.42-5.42h0a5.44,5.44,0,0,1,5.42-5.42H1419a5.44,5.44,0,0,1,5.42,5.42h0A5.44,5.44,0,0,1,1419,664.44Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <path class="cls-1"
+                  d="M1418.62,643.29h-57.33a5.44,5.44,0,0,1-5.42-5.42h0a5.44,5.44,0,0,1,5.42-5.42h57.33a5.44,5.44,0,0,1,5.42,5.42h0A5.44,5.44,0,0,1,1418.62,643.29Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <path class="cls-1"
+                  d="M1418.62,686.14h-57.33a5.44,5.44,0,0,1-5.42-5.42h0a5.44,5.44,0,0,1,5.42-5.42h57.33a5.44,5.44,0,0,1,5.42,5.42h0A5.44,5.44,0,0,1,1418.62,686.14Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <rect class="cls-1" x="1142.01" y="450.01" width="91.42" height="215.06" rx="17.63" ry="17.63"/>
+            <circle class="cls-1" cx="1186.56" cy="609.5" r="7.36"/>
+            <path class="cls-1"
+                  d="M1524.66,645.21h-57.33a5.44,5.44,0,0,1-5.42-5.42h0a5.44,5.44,0,0,1,5.42-5.42h57.33a5.44,5.44,0,0,1,5.42,5.42h0A5.44,5.44,0,0,1,1524.66,645.21Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <rect class="cls-1" x="1153.25" y="464.49" width="68.18" height="10.85" rx="5.42" ry="5.42"/>
+            <path class="cls-1"
+                  d="M1524.27,666.91h-57.33a5.44,5.44,0,0,1-5.42-5.42h0a5.44,5.44,0,0,1,5.42-5.42h57.33a5.44,5.44,0,0,1,5.42,5.42h0A5.44,5.44,0,0,1,1524.27,666.91Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <rect class="cls-1" x="1067.59" y="36.13" width="221.38" height="145.77" rx="15.12" ry="15.12"/>
+            <rect class="cls-1" x="1078.29" y="47.99" width="199.97" height="123.1"/>
+            <path class="cls-1"
+                  d="M1627.47,330.62h-280A12.49,12.49,0,0,0,1360,343.11h255a12.49,12.49,0,0,0,12.49-12.49h0Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <rect class="cls-1" x="860.04" y="108.38" width="112.76" height="198.43" rx="17.25" ry="17.25"
+                  transform="translate(815.76 -857.54) rotate(90)"/>
+            <rect class="cls-1" x="872.34" y="128.92" width="93.38" height="156.77"
+                  transform="translate(818.07 -860.44) rotate(90)"/>
+            <rect class="cls-2" x="990.89" y="204.3" width="29.76" height="5.12" rx="1.75" ry="1.75"
+                  transform="translate(904.37 -947.64) rotate(90)"/>
+            <rect class="cls-2" x="1002.95" y="226.9" width="5.66" height="5.12" rx="1.75" ry="1.75"
+                  transform="translate(926.97 -925.04) rotate(90)"/>
+            <rect class="cls-2" x="1002.95" y="236.52" width="5.66" height="5.12" rx="1.75" ry="1.75"
+                  transform="translate(936.59 -915.41) rotate(90)"/>
+            <rect class="cls-2" x="823.32" y="202.19" width="10.26" height="9.27" rx="1.75" ry="1.75"
+                  transform="translate(727.01 -770.35) rotate(90)"/>
+            <rect class="cls-1" x="2.5" y="71.46" width="257.52" height="169.23" rx="10.17" ry="10.17"/>
+            <rect class="cls-1" x="14.27" y="80.29" width="233.98" height="130.83" rx="10.17" ry="10.17"/>
+            <path class="cls-1"
+                  d="M381.31,415.71l23.29-13.5a12.78,12.78,0,0,1,11.06-6.41l47.12-.08a12.76,12.76,0,0,1,11.07,6.36l23.28,13.43a4.58,4.58,0,0,1-4,6.88l-107.88.18A4.58,4.58,0,0,1,381.31,415.71Z"
+                  transform="translate(-308.26 -148.72)"/>
+            <circle class="cls-1" cx="130.89" cy="225.45" r="3.91"/>
+            <path class="cls-1"
+                  d="M949.72,416.94c-2.45-18.89,36.86-100.1,117.34-62.09,55.58,26.25,40.14,67.89,37.67,88.5,76.4-.56,78.74,111.43-4.89,90.14-19.24,15-71,31.32-117.37,29C905,558.51,873.72,536,873.72,536s-44,14.55-70.67-2.65c-15.71-10.13-15.4-36.41-4-48.94,12-13.23,38-20.61,56.64-13.85,6-37.19,37.66-78.35,94-53.68"
+                  transform="translate(-308.26 -148.72)"/>
+            <path class="cls-1"
+                  d="M976.69,443.29c-1.81-11.81,16-63.88,78.91-48.07,35.65,9,38.63,49.59,36.81,62.47,41.68-2,51.3,56.55-4.8,50.84-9.79,30.64-69.34,30.72-105.13,30.2-51.19-.75-61.8-21-61.8-21s-32.43,9.1-52.09-1.65c-11.58-6.33-11.35-22.76-2.95-30.6,8.87-8.27,14.86-14.79,28.61-10.56-7.49-12.7,6.65-30.48,19.54-38.05,20.64-12.12,49-6.48,62.9,6.39"
+                  transform="translate(-308.26 -148.72)"/>
+            <path class="cls-1"
+                  d="M935.93,486.05c-3.41-7.73-.44-27.18,16.57-31.66,26.9-7.09,31.56,12.8,36.75,19.51,2.72-12,3.26-51.18,39.46-51.18,25.41,0,33.24,27.42,29.89,38.48"
+                  transform="translate(-308.26 -148.72)"/>
+        </svg>
+    </div>
+    <div class="text">В&nbsp;концепцию &laquo;Виртуальный офис&raquo; входит предоставление отдельного прямого
+        московского номера, при этом наши профессиональные операторы
+        ответят на&nbsp;входящие звонки от&nbsp;имени Вашей компании, примут сообщения, получат и&nbsp;отправят факс или
+        электронное сообщение. Все это обеспечит
+        недорогой и&nbsp;эффективный способ ведения бизнеса в&nbsp;Москве.
+    </div>
+</section>
+
+<section class="meeting-facilities">
+    <div class="title">Переговорные комнаты</div>
+    <div class="desc">Мы&nbsp;рады предложить Вам залы для ведения переговоров</div>
+    <div class="text">Для проведения конференций, семинаров, деловых встреч и&nbsp;презентаций к&nbsp;Вашим услугам 5&nbsp;конференц-залов
+        с&nbsp;максимальной вместимостью
+        30&nbsp;человек. Залы оснащены оборудованием для проведения видеоконференции, аудиконференции, мультимедийным и&nbsp;другим
+        профессиональным
+        оборудованием.
+    </div>
+    <div class="rooms" id="meeting-rooms-photos">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="img one"></div>
+                <a href="img/meeting-rooms/1-hover.png"></a>
+            </div>
+            <div class="col-md-12">
+                <div class="img two"></div>
+                <a href="img/meeting-rooms/2-hover.png"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cafe">
+    <div class="title">Кафе «Миллениум»</div>
+    <div class="text">Мы&nbsp;рады предложить Вам расположенное на&nbsp;первом этаже здания, Кафе &laquo;Миллениум&raquo;
+        предлагает блюда европейской и&nbsp;русской кухни. Кафе
+        открыто на&nbsp;завтраки, обеды и&nbsp;ужины 6&nbsp;дней в&nbsp;неделю. Доставка блюд в&nbsp;офисы.
+    </div>
+    <div class="photos" id="cafe-photos">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="overlay"></div>
+                <div class="img one"></div>
+                <div style="display: none;">
+                    <a href="img/cafe/1.png"></a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="overlay"></div>
+                <div class="img two"></div>
+                <div style="display: none;">
+                    <a href="img/cafe/2.png"></a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="overlay"></div>
+                <div class="img three"></div>
+                <div style="display: none;">
+                    <a href="img/cafe/3.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="overlay"></div>
+                <div class="img four"></div>
+                <div style="display: none;">
+                    <a href="img/cafe/4.png"></a>
+                </div>
+            </div>
+            <div class="col-md-14">
+                <div class="overlay"></div>
+                <div class="img five"></div>
+                <div style="display: none;">
+                    <a href="img/cafe/5.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="worldwide-locations">
+    <div class="title">Международная ассоциация Бизнес-центров</div>
+    <div class="al-i"><i class="al-i"></i></div>
+    <div class="text">Бизнес-центр Миллениум Хаус является членом международной ассоциации Бизнес-центров Alliance
+        Business Centers Network. Это дает нашим
+        клиентам следующие привилегии:
+    </div>
+    <div class="text">
+        <ul>
+            <li>Льготные условия аренды меблированных офисов в&nbsp;360 бизнес-центрах по&nbsp;миру</li>
+            <li>10% скидки на&nbsp;аренду офисов на&nbsp;период менее, чем один месяц</li>
+            <li>Бесплатно 8&nbsp;часов в&nbsp;месяц аренды переговорных комнат или один день аренды офиса в&nbsp;любом
+                бизнес-центре
+            </li>
+            <li>Специальные расценки на&nbsp;услугу &laquo;Виртуальный офис&raquo; по&nbsp;миру</li>
+        </ul>
+    </div>
+    <div class="text">Дополнительная информация по&nbsp;странам и&nbsp;городам находится: <a href="http://www.abcn.com"
+                                                                                             target="_blank">www.abcn.com</a>
+    </div>
+</section>
+
+<section class="clients" id="clients">
+    <div class="title">Говорят клиенты</div>
+    <div class="text">&laquo;...Позвольте мне выразить свою благодарность Вам и&nbsp;Вашим коллегам за&nbsp;дружеский
+        прием, оказанный нашей компании во&nbsp;время пребывания
+        в&nbsp;Бизнес-центре Миллениум Хаус, а&nbsp;также поблагодарить за&nbsp;высокий профессиональный уровень
+        предоставляемых услуг..&raquo; (Людмила Бакеева,
+        Middle East Media Research Institute, USA)
+    </div>
+    <div class="text">&laquo;Выражаем искреннюю признательность за&nbsp;высококвалифицированную работы администрации и&nbsp;всех
+        сотрудников Миллениум Хаус, а&nbsp;также
+        за&nbsp;теплое сердечное отношение к&nbsp;сотрудникам нашей компании. С&nbsp;чувством сожаления мы&nbsp;покидаем
+        Ваш гостеприимный Бизнес-центр&raquo;
+        (А.Высоцкий, ЗАО &laquo;А.Д.Д.&raquo;)
+    </div>
+    <div class="text">&laquo;...Искренне признательны за&nbsp;оказанную поддержку и&nbsp;понимание квалифицированного
+        персонала Бизнес-центра Миллениум Хауз в&nbsp;период
+        нашего нахождения в&nbsp;Бизнес-центре&raquo; (Рей Лариджани, Jason Geosystems CIS)
+    </div>
+    <div class="text">Представительство ОАО &laquo;Темирбанк&raquo; благодарит руководство офисного центра &laquo;Миллениум
+        Хаус&raquo; за&nbsp;высокий уровень обслуживания,
+        ответственное и&nbsp;четкое отношение сотрудников к&nbsp;своим должностным обязанностям&quot; (В.И.Соловова,
+        Представитель ОАО &laquo;Темирбанк&raquo;)
+    </div>
+</section>
+
+<section class="footer" id="contacts">
+    <div class="title">Контактная информация</div>
+    <div class="map-container">
+        <div id="map">
+            <iframe height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ3Rmjq2lKtUYRu2jvCwRi1GU&key=AIzaSyD5FTFRIXbW3TU4dxYw5DgA0tYJzmbR6Zg"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="desc">Ирина Семирова, коммерческий директор</div>
+    <div class="contacts">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="overlay"></div>
+                <div class="cell phone">
+                    <div class="icon"></div>
+                </div>
+                <div class="contacts-text">
+                    <span>
+                        <a href="tel:+74957872757">
+                            +7-495-787-27-57
+                        </a><br/>
+                        <a href="tel:+74957872751">
+                            +7-495-787-27-51
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="overlay"></div>
+                <div class="cell fax">
+                    <div class="icon"></div>
+                </div>
+                <div class="contacts-text">
+                    <span>
+                        Факс:<br/>
+                        +7-495-787-27-67
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="overlay"></div>
+                <div class="cell address">
+                    <div class="icon"></div>
+                </div>
+                <div class="contacts-text">
+                    <span>
+                        103045, Россия,<br/>
+                        Москва, Трубная ул., 12
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="overlay"></div>
+                <div class="cell email">
+                    <div class="icon"></div>
+                </div>
+                <div class="contacts-text">
+                    <span>
+                        <a href="mailto:millennium.house@sovintel.ru">
+                            e-mail:<br/>
+                            millennium.house@sovintel.ru
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="copyright"><i class="copy-icon"></i>Milleniumhouse.ru / Все права защищены</div>
+        <div class="designed">Разработано Дианой Брукс</div>
+    </div>
+</section>
+
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<script src="libs/js/jquery-3.1.0.min.js"></script>
+<script src="libs/js/bootstrap.min.js"></script>
+<script src="libs/js/jquery.maskedinput.js"></script>
+<script>
+    $('#req-form-phone').mask("(999) 999-9999");
+</script>
+<script src="libs/js/blueimp-gallery.min.js"></script>
+<script>
+    document.getElementById('service-photos').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+
+    document.getElementById('cafe-photos').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+
+    document.getElementById('meeting-rooms-photos').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
