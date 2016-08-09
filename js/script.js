@@ -107,7 +107,7 @@ $(document).ready(function () {
     // валидация формы
 
     // анти-спам
-    $('form.request').append('<input type="hidden" name="anti-spam" value="true">');
+    $('form.request').append('<input type="hidden" id="anti-spam" name="anti-spam" value="true">');
 
     // проверка email
     $('#req-form-email').blur(function () {
@@ -144,7 +144,44 @@ $(document).ready(function () {
         $('#request').fadeOut(1000);
     }, 2000);
 
+    // отправка формы ajax'ом
+    $('form.request').submit(function () {
+        var formData = {
+            'name': $('#req-form-name').val(),
+            'email': $('#req-form-email').val(),
+            'phone': $('#req-form-phone').val(),
+            'area-before': $('#req-form-area-before').val(),
+            'area-after': $('#req-form-area-after').val(),
+            'emp-before': $('#req-form-emp-before').val(),
+            'emp-after': $('#req-form-emp-after').val(),
+            'anti-spam': $('#anti-spam').val(),
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: 'send.php',
+            data: formData,
+            success: function(data){
+                var response = JSON.parse(data);
+                if (response.send == 'true') {
+                    closeForm($('.request-form'));
+                }
+            },
+        });
+
+        return false;
+    });
 });
+
+function closeForm(form) {
+    $(form).html('');
+    $(form).append('<span class="form-title"><strong>Спасибо за заявку</strong></span>');
+    $(form).append('<span class="desc">Ваш запрос успешно отправлен</span>');
+    $(form).append('<div id="triangle-topleft" class="col-md-offset-2"></div>');
+    setTimeout(function() {
+        $(form).fadeOut(1000);
+    }, 5000);
+}
 
 // фиксированное меню
 $(window).scroll(function () {

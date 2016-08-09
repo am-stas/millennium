@@ -57,7 +57,7 @@
         <span class="top">Полностью оборудованные современные офисы</span>
         <span class="bottom">в аренду сроком от 1 дня до 1 года площадью от 10 до 100 метров</span>
     </div>
-    <div class="request-form" id="request">
+    <div class="request-form" id="request" action="send.php">
         <i class="close"></i>
         <span class="form-title"><strong>Оформить запрос</strong></span>
         <form action="" class="request" method="post">
@@ -78,7 +78,7 @@
             <input type="text" name="emp-before" id="req-form-emp-before" class="js-int int" placeholder="От" required>
             <input type="text" name="emp-after" id="req-form-emp-after" class="js-int int" placeholder="До" required>
 
-            <input type="submit" onclick="validate(this.form)" name="submit" id="req-form-submit" value="Оформить">
+            <input type="submit" name="submit" id="req-form-submit" value="Оформить">
 
             <span class="post-desc">*Поля обязательные для заполнения</span>
         </form>
