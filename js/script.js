@@ -198,7 +198,7 @@ $(window).scroll(function () {
     var header = $('section.header');
     var height = parseInt($(header).css('height'));
     // height - 100 - для более плавного перехода фиксации
-    if ($(window).scrollTop() > (height - 100)) {
+    if ($(window).scrollTop() > height) {
         $(header).addClass('fixed');
     } else {
         $(header).removeClass('fixed');
