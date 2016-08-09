@@ -41,7 +41,6 @@ section {
 section .title {
     text-align: center;
     color: #4c6eac;
-    /*font-size: 60px;*/
     font-size: 38px;
     padding-top: 76px;
 }
@@ -82,7 +81,6 @@ section.header div {
 
 section.header .logo {
     padding-left: 90px;
-    /*padding-top: 15px;*/
 }
 
 section.header .logo .caption {
@@ -91,6 +89,22 @@ section.header .logo .caption {
     margin-left: 58px;
     font-size: 14px;
 }
+
+/*@media screen and (max-width: 768px) {*/
+    /*section.header .logo {*/
+        /*padding-left: 23px;*/
+    /*}*/
+
+    /*section.header .logo .caption {*/
+        /*margin-left: 25px;*/
+        /*font-size: 6px;*/
+    /*}*/
+
+    /*section.header .logo img {*/
+        /*width: 110px;*/
+    /*}*/
+/*}*/
+
 
 section.header .request {
     background: #4c6eac;
@@ -580,6 +594,12 @@ section.virtual-office .image {
     margin-left: 20%;
     margin-right: 20%;
     width: auto;
+}
+
+/* svg */
+
+.st0:hover {
+    fill: #b8c8de;
 }
 
 /* section meeting-facilities */

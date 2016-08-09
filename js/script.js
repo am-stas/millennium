@@ -161,7 +161,7 @@ $(document).ready(function () {
             type: 'POST',
             url: 'send.php',
             data: formData,
-            success: function(data){
+            success: function (data) {
                 var response = JSON.parse(data);
                 if (response.send == 'true') {
                     closeForm($('.request-form'));
@@ -171,14 +171,24 @@ $(document).ready(function () {
 
         return false;
     });
+
+    $('#Слой_10').hover(function () {
+        $('#Слой_10 .st0, #Слой_10 .st1').css('fill', '#b8c8de');
+    });
+    $('.st2').mouseleave(function () {
+        $('#Слой_10 .st0, #Слой_10 .st1').css('fill', '#ffffff');
+    });
 });
 
 function closeForm(form) {
     $(form).html('');
-    $(form).append('<span class="form-title"><strong>Спасибо за заявку</strong></span>');
+    $(form).append('<i class="close"></i>');
+    $(form).append('<span class="form-title"><strong>Спасибо за заявку!</strong></span>');
     $(form).append('<span class="desc">Ваш запрос успешно отправлен</span>');
     $(form).append('<div id="triangle-topleft" class="col-md-offset-2"></div>');
-    setTimeout(function() {
+    $('section.request .request-form').css('height', 'auto');
+    $('#triangle-topleft').css('top', '70px');
+    setTimeout(function () {
         $(form).fadeOut(1000);
     }, 5000);
 }
