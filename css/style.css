@@ -56,6 +56,10 @@ section .desc {
     section .desc {
         font-size: 23px;
     }
+
+    section .title {
+        padding-top: 45px;
+    }
 }
 
 /* reset container*/
@@ -583,7 +587,7 @@ section.services .photo-block .photo img {
 }
 
 /* планшет */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
    section.services .title {
        padding-top: 15px;
    }
@@ -607,6 +611,10 @@ section.services .photo-block .photo img {
     section.services .photo-block .photo img {
         width: 233px;
         height: 177px;
+    }
+
+    section.services .photo-block .photo {
+        height: auto;
     }
 }
 
@@ -642,12 +650,6 @@ section.additional-services .add-services .sign {
     width: 100%;
     font-size: 27px;
     display: none;
-}
-
-@media screen and (max-width: 1366px) {
-    section.additional-services .add-services .sign {
-        font-size: 21px;
-    }
 }
 
 section.additional-services .add-services .sign .small {
@@ -715,6 +717,62 @@ section.additional-services .cell.seven .icon {
 
 section.additional-services .cell img {
     max-width: 100%;
+}
+
+/* планшет */
+
+@media screen and (max-width: 1366px) {
+
+    section.additional-services .title {
+        font-size: 33px;
+    }
+
+    section.additional-services .desc {
+        font-size: 20px;
+    }
+
+    section.additional-services .add-services .sign {
+        font-size: 21px;
+    }
+
+    section.additional-services .cell .icon {
+        background-size: contain;
+        width: 95%;
+        height: 50px;
+    }
+
+    section.additional-services .cell.one .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .cell.two .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .cell.three .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .cell.four .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .cell.five .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .cell.six .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .cell.seven .icon {
+        background-size: contain;
+    }
+
+    section.additional-services .add-services {
+        padding-top: 15px;
+    }
+
 }
 
 /* section virtual-office */

@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     $('section.footer #map iframe').css('border', '5px solid #6c8bb7');
 
-    // скролл
+    // скролл в меню
     $(".menu a").click(function () {
         var elementClick = $(this).attr("href");
 
@@ -66,13 +66,10 @@ $(document).ready(function () {
         if (elementClick == '#about') {
             var destination = $(elementClick).offset().top + 175;
         } else if (elementClick == '#request') { // тут определяется не distination, а открыта форма или нет
-            // если нет формы
-            if (!$('#request').hasClass('fixed')) {
-                // фиксируем и показываем ее
-                fixForm();
-            } else {
-                // убираем фиксацию и скрываем
-                unFixForm();
+            if (!$('#request').hasClass('fixed')) { // если нет формы
+                fixForm(); // фиксируем и показываем ее
+            } else { // есть
+                unFixForm(); // убираем фиксацию и скрываем
             }
             return false;
         } else {
@@ -82,20 +79,6 @@ $(document).ready(function () {
         jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
         return false;
     });
-
-    function fixForm() {
-        var form = $('#request');
-        $(form).addClass('fixed');
-        $(form).fadeIn(1000);
-    }
-
-    function unFixForm() {
-        var form = $('#request');
-        $(form).fadeOut();
-        setTimeout(function () {
-            $(form).removeClass('fixed');
-        }, 1000);
-    }
 
     $('#request .close').click(function () {
         $('#request').fadeOut(1000);
@@ -120,11 +103,6 @@ $(document).ready(function () {
             }
         }
     });
-
-    // проверка числовых полей
-    function isNotInteger(val) {
-        return isNaN(parseInt(val));
-    }
 
     // ввод только числовых значений
     // применяется в форме для input'ов с классом js-int
@@ -172,6 +150,7 @@ $(document).ready(function () {
         return false;
     });
 
+    // hover в svg на двух серверах
     $('#Слой_10').hover(function () {
         $('#Слой_10 .st0, #Слой_10 .st1').css('fill', '#b8c8de');
     });
@@ -179,6 +158,25 @@ $(document).ready(function () {
         $('#Слой_10 .st0, #Слой_10 .st1').css('fill', '#ffffff');
     });
 });
+
+function fixForm() {
+    var form = $('#request');
+    $(form).addClass('fixed');
+    $(form).fadeIn(1000);
+}
+
+function unFixForm() {
+    var form = $('#request');
+    $(form).fadeOut();
+    setTimeout(function () {
+        $(form).removeClass('fixed');
+    }, 1000);
+}
+
+// проверка числовых полей
+function isNotInteger(val) {
+    return isNaN(parseInt(val));
+}
 
 function closeForm(form) {
     $(form).html('');
