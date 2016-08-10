@@ -266,10 +266,10 @@ section.request .request-form {
     text-align: center;
     -webkit-border-radius: 15px;
     -webkit-border-bottom-left-radius: 0;
-       -moz-border-radius: 15px;
-       -moz-border-radius-bottomleft: 0;
-            border-radius: 15px;
-            border-bottom-left-radius: 0;
+    -moz-border-radius: 15px;
+    -moz-border-radius-bottomleft: 0;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
 }
 
 section.request .request-form.fixed {
@@ -568,9 +568,9 @@ section.services .photo-block .photo .overlay {
     width: 100%;
     position: absolute;
     -webkit-transition: all 0.5s ease-out 0.1s;
-       -moz-transition: all 0.5s ease-out 0.1s;
-         -o-transition: all 0.5s ease-out 0.1s;
-            transition: all 0.5s ease-out 0.1s;
+    -moz-transition: all 0.5s ease-out 0.1s;
+    -o-transition: all 0.5s ease-out 0.1s;
+    transition: all 0.5s ease-out 0.1s;
 }
 
 section.services .photo-block .photo .overlay:hover {
@@ -584,8 +584,8 @@ section.services .photo-block .photo .top {
     height: 100%;
     position: absolute;
     -webkit-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-       -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-            box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+    -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+    box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
 }
 
 section.services .photo-block .photo img {
@@ -595,9 +595,9 @@ section.services .photo-block .photo img {
 
 /* планшет */
 @media screen and (max-width: 768px) {
-   section.services .title {
-       padding-top: 15px;
-   }
+    section.services .title {
+        padding-top: 15px;
+    }
 
     section.services .check {
         width: 20px;
@@ -1028,6 +1028,20 @@ section.worldwide-locations i.al-i {
     margin-bottom: 45px;
 }
 
+/* планшет */
+
+@media screen and (max-width: 768px) {
+    section.worldwide-locations i.al-i {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    section.worldwide-locations i.al-i {
+        width: 65px;
+        height: 36px;
+    }
+}
+
 /* section clients */
 
 section.clients .text {
@@ -1041,15 +1055,15 @@ section.clients .text:last-child {
 /* планшет */
 
 @media screen and (max-width: 768px) {
-    section.worldwide-locations i.al-i {
-        margin-top: 10px;
-        margin-bottom: 0px;
+
+    section.clients .text {
+        padding-top: 15px;
     }
 
-    section.worldwide-locations i.al-i {
-        width: 65px;
-        height: 36px;
+    section.clients .text:last-child {
+        padding-bottom: 15px;
     }
+
 }
 
 /* section footer */
@@ -1229,4 +1243,78 @@ section.footer .end .copyright .copy-icon {
 section.footer .end .designed {
     display: inline-block;
     float: right;
+}
+
+/* планшет */
+
+@media screen and (max-width: 768px) {
+
+    section.footer .title {
+        padding-top: 20px;
+    }
+
+    section.footer #map {
+        padding-top: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    section.footer .desc {
+        padding-top: 15px;
+        font-weight: 600;
+    }
+
+    section.footer .contacts {
+        top: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    section.footer .contacts .cell {
+        height: 120px;
+    }
+
+    section.footer .contacts .cell .icon {
+        width: 25px;
+        height: 25px;
+        top: 40px;
+    }
+
+    section.footer .contacts .cell.phone .icon,
+    section.footer .contacts .cell.fax .icon,
+    section.footer .contacts .cell.address .icon,
+    section.footer .contacts .cell.email .icon {
+        background-size: cover;
+    }
+
+    section.footer .contacts .cell.phone .icon.hover,
+    section.footer .contacts .cell.fax .icon.hover,
+    section.footer .contacts .cell.address .icon.hover,
+    section.footer .contacts .cell.email .icon.hover {
+        background-size: cover;
+    }
+
+    section.footer .contacts .contacts-text {
+        font-size: 12px;
+    }
+
+    section.footer .contacts .contacts-text {
+        top: 70px;
+    }
+
+    section.footer .end {
+        font-size: 7px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+
+    section.footer .end .copyright .copy-icon {
+        width: 8px;
+        height: 8px;
+        top: 1px;
+        margin-right: 2px;
+    }
+
 }
