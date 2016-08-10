@@ -58,7 +58,7 @@ $(document).ready(function () {
     $('section.footer #map iframe').css('border', '5px solid #6c8bb7');
 
     // скролл в меню
-    $(".menu a").click(function () {
+    $(".menu a, .m-menu a").click(function () {
         var elementClick = $(this).attr("href");
 
         // правильное выравнивание относительно заголовка
