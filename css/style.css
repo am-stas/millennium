@@ -52,13 +52,20 @@ section .desc {
 }
 
 /* планшет */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     section .desc {
         font-size: 23px;
     }
 
     section .title {
         padding-top: 45px;
+        font-size: 33px;
+    }
+
+    .text {
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 25px;
     }
 }
 
@@ -606,6 +613,13 @@ section.services .photo-block .photo img {
 
     section.services .photo-block {
         padding-top: 20px;
+        margin-left: 10px;
+        margin-right: 25px;
+        padding-left: 0px;
+    }
+
+    section.services .photo-block .row {
+        padding-right: 0;
     }
 
     section.services .photo-block .photo img {
@@ -721,7 +735,7 @@ section.additional-services .cell img {
 
 /* планшет */
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
 
     section.additional-services .title {
         font-size: 33px;
@@ -729,6 +743,11 @@ section.additional-services .cell img {
 
     section.additional-services .desc {
         font-size: 20px;
+    }
+
+    section.additional-services .add-services {
+        padding-left: 10px;
+        padding-right: 25px;
     }
 
     section.additional-services .add-services .sign {
@@ -799,6 +818,24 @@ section.virtual-office .image {
     fill: #b8c8de;
 }
 
+/* планшет */
+
+@media screen and (max-width: 768px) {
+
+    section.virtual-office .text {
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+
+    section.virtual-office .image {
+        margin-top: 20px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+}
+
 /* section meeting-facilities */
 
 section.meeting-facilities .desc {
@@ -845,6 +882,29 @@ section.meeting-facilities .rooms .img.two:hover {
 
 section.meeting-facilities img {
     max-width: 100%;
+}
+
+/* планшет */
+
+@media screen and (max-width: 768px) {
+    section.meeting-facilities .desc {
+        font-size: 20px;
+        padding-top: 20px;
+        font-weight: 600;
+    }
+
+    section.meeting-facilities .text {
+        padding-top: 15px;
+    }
+
+    section.meeting-facilities .rooms {
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+
+    section.meeting-facilities .rooms .img {
+        height: 270px;
+    }
 }
 
 /* section cafe */
@@ -930,6 +990,28 @@ section.cafe .img.five {
     background: url(../img/cafe/5.png) no-repeat;
 }
 
+/* планшет */
+
+@media screen and (max-width: 768px) {
+    section.cafe .photos {
+        padding-top: 15px;
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+
+    section.cafe .col-md-8 .img {
+        height: 160px;
+    }
+
+    section.cafe .col-md-10 .img, section.cafe .col-md-14 .img {
+        height: 220px;
+    }
+
+    section.cafe .img.four, section.cafe .img.five {
+        background-size: cover;
+    }
+}
+
 /* section worldwide-locations */
 
 section.worldwide-locations .al-i {
@@ -954,6 +1036,20 @@ section.clients .text {
 
 section.clients .text:last-child {
     padding-bottom: 100px;
+}
+
+/* планшет */
+
+@media screen and (max-width: 768px) {
+    section.worldwide-locations i.al-i {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    section.worldwide-locations i.al-i {
+        width: 65px;
+        height: 36px;
+    }
 }
 
 /* section footer */
