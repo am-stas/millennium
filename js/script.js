@@ -159,9 +159,18 @@ $(document).ready(function () {
     });
 
     $('.mobile-menu i.burger').click(function () {
-        $(this).fadeOut();
+        $(this).css('display', 'none');
         $('.m-menu').addClass('active');
     });
+
+    // закрытие мобильного меню
+    // может как-то можно сделать по другому?
+    // $('body').click(function () {
+    //     if ($('.m-menu').hasClass('active')) {
+    //         $('.m-menu').removeClass('active');
+    //         $('.mobile-menu i.burger').css('display', 'inline-block');
+    //     }
+    // });
 
     $('.m-menu li').hover(function () {
         $(this).css('background', '#4c6eac');

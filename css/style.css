@@ -213,12 +213,14 @@ section.header .m-menu.active {
 section.header .m-menu ul {
     list-style: none;
     padding-left: 0px;
+    margin-top: 0px;
     background: #d7dee9;
 }
 
 section.header .m-menu ul li {
     background: #d7dee9;
     text-align: center;
+    padding-top: 10px;
     height: 40px;
     width: 140px;
 }
