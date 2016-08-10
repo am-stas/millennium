@@ -157,6 +157,20 @@ $(document).ready(function () {
     $('.st2').mouseleave(function () {
         $('#Слой_10 .st0, #Слой_10 .st1').css('fill', '#ffffff');
     });
+
+    $('.mobile-menu i.burger').click(function () {
+        $(this).fadeOut();
+        $('.m-menu').addClass('active');
+    });
+
+    $('.m-menu li').hover(function () {
+        $(this).css('background', '#4c6eac');
+        $(this).find('a').css('color', '#d7dee9');
+    });
+    $('.m-menu li').mouseleave(function () {
+        $(this).css('background', '#d7dee9');
+        $(this).find('a').css('color', '#4c6eac');
+    });
 });
 
 function fixForm() {

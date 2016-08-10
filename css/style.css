@@ -51,8 +51,9 @@ section .desc {
     text-align: center;
 }
 
-/* планшет */
+/* tablet */
 @media screen and (max-width: 768px) {
+
     section .desc {
         font-size: 23px;
     }
@@ -67,6 +68,13 @@ section .desc {
         padding-left: 10px;
         padding-right: 25px;
     }
+
+}
+
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
 }
 
 /* reset container*/
@@ -150,9 +158,10 @@ section.header .menu a.hover {
     color: #d9e0ed;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
+
     section.header {
         height: 50px;
     }
@@ -181,6 +190,61 @@ section.header .menu a.hover {
     section.header .menu a {
         font-size: 16px;
     }
+
+}
+
+section.header .m-menu {
+    display: none;
+}
+
+section.header .m-menu.active {
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    margin-right: 17px;
+    position: relative;
+    bottom: 35px;
+    z-index: 100;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(15,28,61,1);
+       -moz-box-shadow: 0px 0px 18px 0px rgba(15,28,61,1);
+            box-shadow: 0px 0px 18px 0px rgba(15,28,61,1);
+}
+
+section.header .m-menu ul {
+    list-style: none;
+    padding-left: 0px;
+    background: #d7dee9;
+}
+
+section.header .m-menu ul li {
+    background: #d7dee9;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+}
+section.header .m-menu ul li a {
+    color: #4c6eac;
+}
+
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
+    section.header .menu {
+        display: none;
+    }
+
+    section.header .mobile-menu i.burger {
+        background: url(../img/mobile-menu.png);
+        background-size: contain;
+        width: 29px;
+        height: 19px;
+        display: inline-block;
+        float: right;
+        margin-top: 15px;
+        margin-right: 10px;;
+    }
+
 }
 
 /* section request */
@@ -266,10 +330,10 @@ section.request .request-form {
     text-align: center;
     -webkit-border-radius: 15px;
     -webkit-border-bottom-left-radius: 0;
-    -moz-border-radius: 15px;
-    -moz-border-radius-bottomleft: 0;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
+       -moz-border-radius: 15px;
+       -moz-border-radius-bottomleft: 0;
+            border-radius: 15px;
+            border-bottom-left-radius: 0;
 }
 
 section.request .request-form.fixed {
@@ -383,9 +447,10 @@ section.request .request-form span {
     color: #68696a;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
+
     section.request {
         height: 680px;
     }
@@ -455,6 +520,7 @@ section.request .request-form span {
         border-top: 50px solid #ffffff;
         left: 0px;
     }
+
 }
 
 /* section about */
@@ -514,8 +580,9 @@ section.about .philosophy-desc {
     font-size: 28px;
 }
 
-/* планшет */
+/* tablet */
 @media screen and (min-width: 768px) {
+
     section.about .about-title {
         padding-top: 165px;
     }
@@ -527,6 +594,7 @@ section.about .philosophy-desc {
     section.about .philosophy-bg {
         margin-top: 0px;
     }
+
 }
 
 /* section services */
@@ -568,9 +636,9 @@ section.services .photo-block .photo .overlay {
     width: 100%;
     position: absolute;
     -webkit-transition: all 0.5s ease-out 0.1s;
-    -moz-transition: all 0.5s ease-out 0.1s;
-    -o-transition: all 0.5s ease-out 0.1s;
-    transition: all 0.5s ease-out 0.1s;
+       -moz-transition: all 0.5s ease-out 0.1s;
+         -o-transition: all 0.5s ease-out 0.1s;
+            transition: all 0.5s ease-out 0.1s;
 }
 
 section.services .photo-block .photo .overlay:hover {
@@ -584,8 +652,8 @@ section.services .photo-block .photo .top {
     height: 100%;
     position: absolute;
     -webkit-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+       -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+            box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
 }
 
 section.services .photo-block .photo img {
@@ -593,8 +661,9 @@ section.services .photo-block .photo img {
     max-width: 100%;
 }
 
-/* планшет */
+/* tablet */
 @media screen and (max-width: 768px) {
+
     section.services .title {
         padding-top: 15px;
     }
@@ -630,6 +699,7 @@ section.services .photo-block .photo img {
     section.services .photo-block .photo {
         height: auto;
     }
+
 }
 
 /* section additional-services */
@@ -671,9 +741,11 @@ section.additional-services .add-services .sign .small {
 }
 
 @media screen and (max-width: 1366px) {
+
     section.additional-services .add-services .sign .small {
         font-size: 16px;
     }
+
 }
 
 section.additional-services .row {
@@ -690,8 +762,8 @@ section.additional-services .cell {
     display: flex;
     align-items: center;
     -webkit-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+       -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+            box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
 }
 
 section.additional-services .cell .icon {
@@ -733,7 +805,7 @@ section.additional-services .cell img {
     max-width: 100%;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
 
@@ -805,10 +877,7 @@ section.virtual-office .text.center {
 }
 
 section.virtual-office .image {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 60px 20% 20% 40px;
     width: auto;
 }
 
@@ -818,7 +887,7 @@ section.virtual-office .image {
     fill: #b8c8de;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
 
@@ -854,12 +923,12 @@ section.meeting-facilities .rooms .img {
     width: 100%;
     height: 417px;
     -webkit-transition: all 1s ease-out 0.1s;
-    -moz-transition: all 1s ease-out 0.1s;
-    -o-transition: all 1s ease-out 0.1s;
-    transition: all 1s ease-out 0.1s;
+       -moz-transition: all 1s ease-out 0.1s;
+         -o-transition: all 1s ease-out 0.1s;
+            transition: all 1s ease-out 0.1s;
     -webkit-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+       -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+            box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
 }
 
 section.meeting-facilities .rooms .img.one {
@@ -884,9 +953,10 @@ section.meeting-facilities img {
     max-width: 100%;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
+
     section.meeting-facilities .desc {
         font-size: 20px;
         padding-top: 20px;
@@ -905,6 +975,7 @@ section.meeting-facilities img {
     section.meeting-facilities .rooms .img {
         height: 270px;
     }
+
 }
 
 /* section cafe */
@@ -917,8 +988,8 @@ section.cafe .photos {
 
 section.cafe .photos .row {
     -webkit-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
-    box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+       -moz-box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
+            box-shadow: 1px 5px 44px -12px rgba(21, 65, 96, 1);
 }
 
 section.cafe .photos img {
@@ -929,9 +1000,9 @@ section.cafe .img {
     background-size: contain;
     width: 100%;
     -webkit-transition: all 1s ease-out 0.1s;
-    -moz-transition: all 1s ease-out 0.1s;
-    -o-transition: all 1s ease-out 0.1s;
-    transition: all 1s ease-out 0.1s;
+       -moz-transition: all 1s ease-out 0.1s;
+         -o-transition: all 1s ease-out 0.1s;
+            transition: all 1s ease-out 0.1s;
 }
 
 section.cafe .overlay {
@@ -990,9 +1061,10 @@ section.cafe .img.five {
     background: url(../img/cafe/5.png) no-repeat;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
+
     section.cafe .photos {
         padding-top: 15px;
         margin-left: 10px;
@@ -1010,6 +1082,7 @@ section.cafe .img.five {
     section.cafe .img.four, section.cafe .img.five {
         background-size: cover;
     }
+
 }
 
 /* section worldwide-locations */
@@ -1028,9 +1101,10 @@ section.worldwide-locations i.al-i {
     margin-bottom: 45px;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
+
     section.worldwide-locations i.al-i {
         margin-top: 10px;
         margin-bottom: 0px;
@@ -1040,6 +1114,7 @@ section.worldwide-locations i.al-i {
         width: 65px;
         height: 36px;
     }
+
 }
 
 /* section clients */
@@ -1052,7 +1127,7 @@ section.clients .text:last-child {
     padding-bottom: 100px;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
 
@@ -1111,8 +1186,8 @@ section.footer .contacts {
     position: relative;
     top: 27px;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(18, 12, 84, 0.49);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(18, 12, 84, 0.49);
-    box-shadow: 0px 0px 30px 0px rgba(18, 12, 84, 0.49);
+       -moz-box-shadow: 0px 0px 30px 0px rgba(18, 12, 84, 0.49);
+            box-shadow: 0px 0px 30px 0px rgba(18, 12, 84, 0.49);
 }
 
 section.footer .col-md-6 {
@@ -1202,9 +1277,11 @@ section.footer .contacts .contacts-text {
 }
 
 @media screen and (max-width: 1366px) {
+
     section.footer .contacts .contacts-text {
         font-size: 22px;
     }
+
 }
 
 section.footer .contacts .contacts-text a {
@@ -1245,7 +1322,7 @@ section.footer .end .designed {
     float: right;
 }
 
-/* планшет */
+/* tablet */
 
 @media screen and (max-width: 768px) {
 
