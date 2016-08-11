@@ -25,6 +25,13 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    text-align: center;
+    color: #4c6eac;
+    font-size: 38px;
+    padding-top: 76px;
+}
+
 .text {
     padding-left: 95px;
     padding-right: 95px;
@@ -63,6 +70,11 @@ section .desc {
         font-size: 33px;
     }
 
+    h2 {
+        padding-top: 45px;
+        font-size: 33px;
+    }
+
     .text {
         padding-top: 15px;
         padding-left: 10px;
@@ -85,6 +97,11 @@ section .desc {
     }
 
     section .title {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    h2 {
         font-size: 18px;
         padding-top: 20px;
     }
@@ -602,6 +619,10 @@ section.about .about-title {
     padding-top: 300px;
     display: block;
     text-align: center;
+}
+
+section.about h2 {
+    padding-top: 300px;
 }
 
 section.about .text {
