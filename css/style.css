@@ -75,6 +75,23 @@ section .desc {
 
 @media screen and (max-width: 425px) {
 
+    p {
+        margin-top: 0;
+    }
+
+    .text {
+        font-size: 15px;
+        padding-top: 0;
+    }
+
+    section .title {
+        font-size: 18px;
+    }
+
+    section .desc {
+        font-size: 15px;
+    }
+
 }
 
 /* reset container*/
@@ -90,8 +107,8 @@ section.header {
     background: #d7dde9;
     height: 100px;
     -webkit-box-shadow: 0px 17px 54px -20px rgba(15, 37, 65, 1);
-    -moz-box-shadow: 0px 17px 54px -20px rgba(15, 37, 65, 1);
-    box-shadow: 0px 17px 54px -20px rgba(15, 37, 65, 1);
+       -moz-box-shadow: 0px 17px 54px -20px rgba(15, 37, 65, 1);
+            box-shadow: 0px 17px 54px -20px rgba(15, 37, 65, 1);
 }
 
 section.header.fixed {
@@ -143,8 +160,8 @@ section.header .menu .li {
 section.header .menu .li.hover {
     background: #4c6ead;
     -webkit-box-shadow: -1px 3px 26px 0px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -1px 3px 26px 0px rgba(255, 255, 255, 1);
-    box-shadow: -1px 3px 26px 0px rgba(255, 255, 255, 1);
+       -moz-box-shadow: -1px 3px 26px 0px rgba(255, 255, 255, 1);
+            box-shadow: -1px 3px 26px 0px rgba(255, 255, 255, 1);
 }
 
 section.header .menu a {
@@ -274,8 +291,8 @@ section.request #change-lang div {
     padding-top: 25%;
     height: 46px;
     -webkit-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0);
-    -moz-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0);
+       -moz-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0);
 }
 
 section.request #change-lang div:hover {
@@ -528,6 +545,7 @@ section.request .request-form span {
 /* mobile */
 
 @media screen and (max-width: 425px) {
+
     section.request {
         background-size: cover;
         height: 200px;
@@ -561,6 +579,7 @@ section.request .request-form span {
         height: 24px;
         font-size: 8px;
     }
+
 }
 
 /* section about */
@@ -633,6 +652,46 @@ section.about .philosophy-desc {
 
     section.about .philosophy-bg {
         margin-top: 0px;
+    }
+
+}
+
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
+    section.about {
+        background: url(../img/about-background-mobile.png) no-repeat;
+        background-size: contain;
+        margin-left: -8px;
+    }
+
+    section.about .about-title {
+        padding-top: 145px;
+        font-size: 18px;
+    }
+
+    section.about .philosophy-bg {
+        margin-top: 30px;
+        height: 65px;
+    }
+
+    section.about .philosophy-title {
+        top: 0;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    section.about .philosophy-title .icon {
+        background: url(../img/philosophy-icon-hover.png) no-repeat;
+        background-size: contain;
+        width: 10px;
+        height: 10px;
+        margin-right: 0;
+    }
+
+    section.about .philosophy-desc {
+        font-size: 12px;
     }
 
 }
@@ -738,6 +797,42 @@ section.services .photo-block .photo img {
 
     section.services .photo-block .photo {
         height: auto;
+    }
+
+}
+
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
+    section.services .desc {
+        padding-top: 10px;
+    }
+
+    section.services .check {
+        display: none;
+    }
+
+    section.services .text {
+        padding-top: 10px;
+    }
+
+    section.services .photo-block .photo {
+        padding-top: 0;
+        display: block;
+        width: 100%;
+    }
+
+    section.services .photo-block .photo img {
+        width: 100%;
+    }
+
+    section.services .photo-block div.col-sm-8 {
+        display: none;
+    }
+
+    section.services .photo-block div.col-xs-24 {
+        display: block;
     }
 
 }
@@ -1432,6 +1527,26 @@ section.footer .end .designed {
         height: 8px;
         top: 1px;
         margin-right: 2px;
+    }
+
+}
+
+/* slider */
+
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
+    .blueimp-gallery {
+        background: rgba(0,0,0,0.6);
+    }
+
+    .blueimp-gallery>.indicator {
+        bottom: 70px;
+    }
+
+    .blueimp-gallery>.play-pause {
+        display: none;
     }
 
 }
