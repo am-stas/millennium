@@ -265,6 +265,12 @@ section.header .m-menu ul li a {
         margin-right: 10px;;
     }
 
+    section.header .logo .caption {
+        margin-left: 26px;
+        font-size: 6px;
+        width: 200px;
+    }
+
 }
 
 /* section request */
@@ -641,7 +647,7 @@ section.about .philosophy-desc {
 }
 
 /* tablet */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
     section.about .about-title {
         padding-top: 165px;
@@ -868,12 +874,12 @@ section.additional-services .add-services .sign {
     color: #ffffff;
     text-align: center;
     width: 100%;
-    font-size: 27px;
+    font-size: 22px;
     display: none;
 }
 
 section.additional-services .add-services .sign .small {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -1042,6 +1048,7 @@ section.virtual-office .text.center {
 
 section.virtual-office .image {
     margin: 60px 20% 20% 40px;
+    padding-left: 20%;
     width: auto;
 }
 
@@ -1065,6 +1072,7 @@ section.virtual-office .image {
         margin-top: 20px;
         margin-left: 120px;
         margin-right: 120px;
+        padding-left: 0px;
     }
 
 }
@@ -1418,6 +1426,7 @@ section.footer #map {
 section.footer #map iframe {
     border: 5px solid #6c8bb7;
     width: 100%;
+    height: 600px;
 }
 
 section.footer .desc {
@@ -1580,6 +1589,10 @@ section.footer .end .designed {
         margin-right: 30px;
     }
 
+    section.footer #map iframe {
+        height: 245px;
+    }
+
     section.footer .desc {
         padding-top: 15px;
         font-weight: 600;
@@ -1656,9 +1669,9 @@ section.footer .end .designed {
 
     section.footer #map {
         margin-left: 0px;
-        margin-right: 0px;
+        margin-right: 5px;
         padding-top: 20px;
-        height: 210px;
+        /*height: 210px;*/
     }
 
     section.footer .desc {
@@ -1668,7 +1681,7 @@ section.footer .end .designed {
 
     section.footer .contacts {
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
 
     section.footer .contacts .contacts-text {
@@ -1677,7 +1690,7 @@ section.footer .end .designed {
 
     section.footer .end {
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
 
 }
