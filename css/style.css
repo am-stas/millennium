@@ -674,6 +674,10 @@ section.about .philosophy-desc {
         padding-top: 165px;
     }
 
+    section.about h2 {
+        padding-top: 165px;
+    }
+
     section.about .text {
         top: 0px;
     }
@@ -695,6 +699,11 @@ section.about .philosophy-desc {
     }
 
     section.about .about-title {
+        padding-top: 145px;
+        font-size: 18px;
+    }
+
+    section.about h2 {
         padding-top: 145px;
         font-size: 18px;
     }
@@ -792,6 +801,10 @@ section.services .photo-block .photo img {
 @media screen and (max-width: 768px) {
 
     section.services .title {
+        padding-top: 15px;
+    }
+
+    section.services h2 {
         padding-top: 15px;
     }
 
@@ -976,6 +989,10 @@ section.additional-services .cell img {
         font-size: 33px;
     }
 
+    section.additional-services h2 {
+        font-size: 33px;
+    }
+
     section.additional-services .desc {
         font-size: 20px;
     }
@@ -1034,6 +1051,11 @@ section.additional-services .cell img {
 @media screen and (max-width: 425px) {
 
     section.additional-services .title {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    section.additional-services h2 {
         font-size: 16px;
         padding-top: 20px;
     }
@@ -1103,6 +1125,10 @@ section.virtual-office .image {
 @media screen and (max-width: 425px) {
 
     section.virtual-office .title {
+        padding-top: 20px;
+    }
+
+    section.virtual-office h2 {
         padding-top: 20px;
     }
 
@@ -1194,6 +1220,10 @@ section.meeting-facilities img {
 @media screen and (max-width: 425px) {
 
     section.meeting-facilities .title {
+        padding-top: 25px;
+    }
+
+    section.meeting-facilities h2 {
         padding-top: 25px;
     }
 
@@ -1428,6 +1458,10 @@ section.footer .title {
     color: #ffffff;
 }
 
+section.footer h2 {
+    color: #ffffff;
+}
+
 section.footer .map-container {
     width: 100%;
     top: 0;
@@ -1604,6 +1638,10 @@ section.footer .end .designed {
         padding-top: 20px;
     }
 
+    section.footer h2 {
+        padding-top: 20px;
+    }
+
     section.footer #map {
         padding-top: 15px;
         margin-left: 30px;
@@ -1683,6 +1721,12 @@ section.footer .end .designed {
     }
 
     section.footer .title {
+        padding-top: 10px;
+        font-size: 15px;
+        color: #3d5989;
+    }
+
+    section.footer h2 {
         padding-top: 10px;
         font-size: 15px;
         color: #3d5989;
