@@ -525,6 +525,44 @@ section.request .request-form span {
 
 }
 
+/* mobile */
+
+@media screen and (max-width: 425px) {
+    section.request {
+        background-size: cover;
+        height: 200px;
+    }
+
+    section.request .title {
+        top: -70px;
+    }
+
+    section.request .title span.top {
+        font-size: 19px;
+    }
+
+    section.request .title span.bottom {
+        font-size: 18px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    section.request #change-lang {
+        top: 140px;
+        left: 10px;
+        width: 33px;
+    }
+
+    section.request #change-lang a {
+        padding-bottom: 2px;
+    }
+
+    section.request #change-lang div {
+        height: 24px;
+        font-size: 8px;
+    }
+}
+
 /* section about */
 
 section.about {
