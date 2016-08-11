@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fa9ed48-4a4b-4254-b9cd-2f6b79d0e448" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="millenium.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="261" column="51" selection-start-line="261" selection-start-column="51" selection-end-line="261" selection-end-column="51" />
+            <state relative-caret-position="362">
+              <caret line="437" column="53" selection-start-line="437" selection-start-column="53" selection-end-line="437" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -39,8 +41,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="1082" column="35" selection-start-line="1082" selection-start-column="35" selection-end-line="1082" selection-end-column="35" />
+            <state relative-caret-position="311">
+              <caret line="1176" column="26" selection-start-line="1176" selection-start-column="26" selection-end-line="1176" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -221,12 +223,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470738752241</updated>
       <workItem from="1470738754785" duration="36975000" />
-      <workItem from="1470900015009" duration="6621000" />
+      <workItem from="1470900015009" duration="7281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43596000" />
+    <option name="totallyTimeSpent" value="44256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,8 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="261" column="51" selection-start-line="261" selection-start-column="51" selection-end-line="261" selection-end-column="51" />
+        <state relative-caret-position="362">
+          <caret line="437" column="53" selection-start-line="437" selection-start-column="53" selection-end-line="437" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -453,8 +455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="1082" column="35" selection-start-line="1082" selection-start-column="35" selection-end-line="1082" selection-end-column="35" />
+        <state relative-caret-position="311">
+          <caret line="1176" column="26" selection-start-line="1176" selection-start-column="26" selection-end-line="1176" selection-end-column="26" />
           <folding />
         </state>
       </provider>

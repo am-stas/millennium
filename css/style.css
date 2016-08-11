@@ -1159,6 +1159,42 @@ section.meeting-facilities img {
 
 }
 
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
+    section.meeting-facilities .title {
+        padding-top: 25px;
+    }
+
+    section.meeting-facilities .desc {
+        font-size: 13px;
+        padding-top: 10px;
+        font-weight: normal;
+    }
+
+    section.meeting-facilities .rooms {
+        padding-top: 10px;
+    }
+
+    section.meeting-facilities .rooms .img {
+        height: 220px;
+    }
+
+    section.meeting-facilities .rooms .img.one {
+        background-size: cover;
+    }
+
+    section.meeting-facilities .rooms .img.two {
+        background-size: cover;
+    }
+
+    section.meeting-facilities .rooms .col-xs-24 {
+        padding-bottom: 10px;
+    }
+
+}
+
 /* section cafe */
 
 section.cafe .photos {
