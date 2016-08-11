@@ -3,7 +3,7 @@
 if($_POST['anti-spam'] == 'true') {
 
     // на всякий
-    $data = array_map ( 'htmlspecialchars' , $_POST );
+    $data = array_map('htmlspecialchars', $_POST );
 
     require_once __DIR__ . '/vendor/autoload.php';
 
