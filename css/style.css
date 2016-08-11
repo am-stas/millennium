@@ -1068,6 +1068,24 @@ section.virtual-office .image {
 
 }
 
+/* mobile */
+
+@media screen and (max-width: 425px) {
+
+    section.virtual-office .title {
+        padding-top: 20px;
+    }
+
+    section.virtual-office .text.center {
+        text-align: justify;
+    }
+
+    section.virtual-office .image {
+        margin: 10px 25px 0 10px;
+    }
+
+}
+
 /* section meeting-facilities */
 
 section.meeting-facilities .desc {
