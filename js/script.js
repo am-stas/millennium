@@ -64,7 +64,7 @@ $(document).ready(function () {
         // правильное выравнивание относительно заголовка
         // задаем destination (высоту)
         if (elementClick == '#about') {
-            var destination = $(elementClick).offset().top + 175;
+            var destination = $(elementClick).offset().top + 100;
         } else if (elementClick == '#request') { // тут определяется не distination, а открыта форма или нет
             if (!$('#request').hasClass('fixed')) { // если нет формы
                 fixForm(); // фиксируем и показываем ее
@@ -209,7 +209,6 @@ function closeForm(form) {
 $(window).scroll(function () {
     var header = $('section.header');
     var height = parseInt($(header).css('height'));
-    // height - 100 - для более плавного перехода фиксации
     if ($(window).scrollTop() > height) {
         $(header).addClass('fixed');
     } else {

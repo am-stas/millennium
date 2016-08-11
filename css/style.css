@@ -193,41 +193,6 @@ section.header .menu a.hover {
     color: #d9e0ed;
 }
 
-/* tablet */
-
-@media screen and (max-width: 768px) {
-
-    section.header {
-        height: 50px;
-    }
-
-    section.header.fixed {
-        margin-left: -8px;
-    }
-
-    section.header div {
-        height: 50px;
-    }
-
-    section.header .logo {
-        padding-left: 23px;
-    }
-
-    section.header .logo .caption {
-        margin-left: 25px;
-        font-size: 6px;
-    }
-
-    section.header .logo img {
-        width: 110px;
-    }
-
-    section.header .menu a {
-        font-size: 16px;
-    }
-
-}
-
 section.header .m-menu {
     display: none;
 }
@@ -261,6 +226,41 @@ section.header .m-menu ul li {
 }
 section.header .m-menu ul li a {
     color: #4c6eac;
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+
+    section.header {
+        height: 50px;
+    }
+
+    section.header.fixed {
+        margin-left: -8px;
+    }
+
+    section.header div {
+        height: 50px;
+    }
+
+    section.header .logo {
+        padding-left: 23px;
+    }
+
+    section.header .logo .caption {
+        margin-left: 25px;
+        font-size: 6px;
+    }
+
+    section.header .logo img {
+        width: 110px;
+    }
+
+    section.header .menu a {
+        font-size: 16px;
+    }
+
 }
 
 /* mobile */
@@ -381,8 +381,11 @@ section.request .request-form {
 
 section.request .request-form.fixed {
     position: fixed;
-    border: 1px solid #4c6eac;
+    /*border: 1px solid #4c6eac;*/
     z-index: 100;
+    -webkit-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.5);
 }
 
 section.request #triangle-topleft {
@@ -392,6 +395,10 @@ section.request #triangle-topleft {
     border-right: 45px solid transparent;
     position: relative;
     left: -23px;
+}
+
+section.request .request-form.fixed #triangle-topleft {
+    z-index: 100;
 }
 
 section.request .request-form i.close {
@@ -581,6 +588,7 @@ section.request .request-form span {
 
     section.request .title span.top {
         font-size: 19px;
+        padding-right: 5px;
     }
 
     section.request .title span.bottom {
@@ -589,8 +597,12 @@ section.request .request-form span {
         padding-right: 60px;
     }
 
+    section.request .title span.bottom.eng {
+        padding-left: 60px;
+    }
+
     section.request #change-lang {
-        top: 140px;
+        top: 126px;
         left: 10px;
         width: 33px;
     }
@@ -602,6 +614,10 @@ section.request .request-form span {
     section.request #change-lang div {
         height: 24px;
         font-size: 8px;
+    }
+
+    section.request #change-lang .ru {
+        margin-bottom: 4px;
     }
 
 }
@@ -919,7 +935,7 @@ section.additional-services .add-services .sign .small {
 @media screen and (max-width: 1366px) {
 
     section.additional-services .add-services .sign .small {
-        font-size: 16px;
+        font-size: 12px;
     }
 
 }
@@ -1003,7 +1019,13 @@ section.additional-services .cell img {
     }
 
     section.additional-services .add-services .sign {
-        font-size: 21px;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    section.additional-services .add-services .sign.small {
+        font-size: 12px;
+        padding-right: 10px;
     }
 
     section.additional-services .cell .icon {
@@ -1112,9 +1134,7 @@ section.virtual-office .image {
     }
 
     section.virtual-office .image {
-        margin-top: 20px;
-        margin-left: 120px;
-        margin-right: 120px;
+        margin: 20px 120px 0 120px;
         padding-left: 0px;
     }
 
